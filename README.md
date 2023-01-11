@@ -8,75 +8,27 @@ Smith Gakuya & Yaqi Huang
 ## Tests
 __Case 2__      
 //string format: 123456078   
-brd[0][0] = 1;  	
-brd[0][1] = 2;  	 
-brd[0][2] = 3;  	 
-brd[1][0] = 4; 	  
-brd[1][1] = 5; 	   
-brd[1][2] = 6;  	 
-brd[2][0] = 0;  	 
-brd[2][1] = 7;  	 
-brd[2][2] = 8; 		
+brd[0][0] = 1; brd[0][1] = 2; brd[0][2] = 3; brd[1][0] = 4; brd[1][1] = 5; brd[1][2] = 6; brd[2][0] = 0; brd[2][1] = 7; brd[2][2] = 8; 		
 
 __Case 3__    
-//string format: 123460758  	  
-brd[0][0] = 1;  	  
-brd[0][1] = 2;  	     
-brd[0][2] = 3;  	   
-brd[1][0] = 4;  	  
-brd[1][1] = 6;  	   
-brd[1][2] = 0;  	   
-brd[2][0] = 7;			
-brd[2][1] = 5;			
-brd[2][2] = 8;		
+//string format: 123460758  	    	   
+brd[1][2] = 0;  brd[0][0] = 1; brd[0][1] = 2; brd[0][2] = 3; brd[1][0] = 4; brd[2][1] = 5;  brd[1][1] = 6;  brd[2][0] = 7;  brd[2][2] = 8;		
 
 __Case 4__		
 //string format: 412053786			
-brd[0][0] = 4;			
-brd[0][1] = 1;			
-brd[0][2] = 2;			
-brd[1][0] = 0;			
-brd[1][1] = 5;			
-brd[1][2] = 3;			
-brd[2][0] = 7;			
-brd[2][1] = 8;			
-brd[2][2] = 6;			
+brd[0][0] = 4;	brd[0][1] = 1;	brd[0][2] = 2;	brd[1][0] = 0;	brd[1][1] = 5;	brd[1][2] = 3;	brd[2][0] = 7;	brd[2][1] = 8;	brd[2][2] = 6;		
 
 __Case 5__		
 //string format: 412763058			
-brd[0][0] = 4;			
-brd[0][1] = 1;			
-brd[0][2] = 2;			
-brd[1][0] = 7;			
-brd[1][1] = 6;			
-brd[1][2] = 3;			
-brd[2][0] = 0;			
-brd[2][1] = 5;			
-brd[2][2] = 8;			
+brd[0][0] = 4;	brd[0][1] = 1;	brd[0][2] = 2;	brd[1][0] = 7;	brd[1][1] = 6;	brd[1][2] = 3;	brd[2][0] = 0;	brd[2][1] = 5;	brd[2][2] = 8;		
 
 __Case 6__		
 //string format: 412763580			
-brd[0][0] = 4;			
-brd[0][1] = 1;			
-brd[0][2] = 2;			
-brd[1][0] = 7;			
-brd[1][1] = 6;			
-brd[1][2] = 3;			
-brd[2][0] = 5;				
-brd[2][1] = 8;			
-brd[2][2] = 0;			
+brd[0][0] = 4;	brd[0][1] = 1;	brd[0][2] = 2;	brd[1][0] = 7;	brd[1][1] = 6;	brd[1][2] = 3;  brd[2][0] = 5;  brd[2][1] = 8;	brd[2][2] = 0;		
 
 __Case 7__			
-//string format: 134805726			
-brd[0][0] = 1;			
-brd[0][1] = 3;			
-brd[0][2] = 4;			
-brd[1][0] = 8;			
-brd[1][1] = 0;			
-brd[1][2] = 5;			
-brd[2][0] = 7;			
-brd[2][1] = 2;			
-brd[2][2] = 6;			
+//string format: 134805726		
+brd[0][0] = 1;	brd[0][1] = 3;  brd[0][2] = 4;	brd[1][0] = 8;	brd[1][1] = 0;	brd[1][2] = 5;	brd[2][0] = 7;	brd[2][1] = 2; brd[2][2] = 6;			
 
 __Case__	__Number of moves__	    __Number of nodes generated__
 			                    _BFS_    _A* (Manhattan)_      _A* (Other)_ 
@@ -179,7 +131,7 @@ ______________________________
 Returns the goal position of the specified current digit curr		
 
 
-_class AstarComparator implements Comparator<Node>_		
+### _class AstarComparator implements Comparator<Node>_		
 _______________________________________
 @Override		
 > _int compare(Node o1, Node o2)_		
