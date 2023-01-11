@@ -1,17 +1,87 @@
 # 8-Puzzle Solver (BFS & A* Search)
 
+Intelligent solver for 8-Puzzle using Searches i.e. Breadth First Search and A* Search 
+
 ## Authors: 
 Smith Gakuya & Yaqi Huang
 
+## Tests
+__Case 2__
+//string format: 123456078
+brd[0][0] = 1;
+brd[0][1] = 2;
+brd[0][2] = 3;
+brd[1][0] = 4;
+brd[1][1] = 5;
+brd[1][2] = 6;
+brd[2][0] = 0;
+brd[2][1] = 7;
+brd[2][2] = 8;
+__Case 3__
+//string format: 123460758
+brd[0][0] = 1;
+brd[0][1] = 2;
+brd[0][2] = 3;
+brd[1][0] = 4;
+brd[1][1] = 6;
+brd[1][2] = 0;
+brd[2][0] = 7;
+brd[2][1] = 5;
+brd[2][2] = 8;
+__Case 4__
+//string format: 412053786
+brd[0][0] = 4;
+brd[0][1] = 1;
+brd[0][2] = 2;
+brd[1][0] = 0;
+brd[1][1] = 5;
+brd[1][2] = 3;
+brd[2][0] = 7;
+brd[2][1] = 8;
+brd[2][2] = 6;
+__Case 5__
+//string format: 412763058
+brd[0][0] = 4;
+brd[0][1] = 1;
+brd[0][2] = 2;
+brd[1][0] = 7;
+brd[1][1] = 6;
+brd[1][2] = 3;
+brd[2][0] = 0;
+brd[2][1] = 5;
+brd[2][2] = 8;
+__Case 6__
+//string format: 412763580
+brd[0][0] = 4;
+brd[0][1] = 1;
+brd[0][2] = 2;
+brd[1][0] = 7;
+brd[1][1] = 6;
+brd[1][2] = 3;
+brd[2][0] = 5;
+brd[2][1] = 8;
+brd[2][2] = 0;
+__Case 7__
+//string format: 134805726
+brd[0][0] = 1;
+brd[0][1] = 3;
+brd[0][2] = 4;
+brd[1][0] = 8;
+brd[1][1] = 0;
+brd[1][2] = 5;
+brd[2][0] = 7;
+brd[2][1] = 2;
+brd[2][2] = 6;
+
 __Case__	__Number of moves__	    __Number of nodes generated__
 			                        _BFS_ _A* (Manhattan_ _A* (my_ 
-                                             _distance)_      _heuristic)_
+                                                           _distance)_      _heuristic)_
  1.	            12		            2038	    41			39
- 2.	             2		             14	     	4			4
- 3.	             3		             24	     	8			8
- 4.	             5		             99	     	9			9
- 6.	             8		            342		    15			15	
- 6.	            10		            1098		23			20
+ 2.	             2		             14	     	     4			4
+ 3.	             3		             24	     	     8			8
+ 4.	             5		             99	     	     9			9
+ 5.	             8		            342		    15			15	
+ 6.	            10		            1098	    23			20
  7.	        unsolvable			
 Average for all iterations	          
 (should be the same)	158429		23683			40948
